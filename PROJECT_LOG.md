@@ -407,3 +407,13 @@ Format: action, who (when not the whole team), reason, outcome. Newest last. Cop
 **Reason:** Team brief for Phase 6. These pages stated facts without a sources list on the page itself, and the timeline stopped at 11 Nov. Licence data and descriptive captions give image search more context about each photo. Checked on 15 Nov: no `X-Robots-Tag` header on any checked page and the pages send `index, follow`, so the day-1 `noindex` problem stays fixed.
 
 **Outcome:** Offline page check and PHP syntax check passed before publishing; live check after publishing.
+
+## 2026-11-19
+
+**Action:** Visual redesign of the whole site through `snippets/design.php` (and the quiz styles in `snippets/challenge.php`). No page text, links, images, structured data or scripts changed. Direction: a North Sea field guide. Colours come from the mascot (deep teal, seafoam) with its beak terracotta as the only accent, replacing the gold; headings use Platypi and text uses Manrope at a readable weight, both served by the theme from our own server (no third-party font requests). Boxed cards with shadows became ruled entries, data tables are set as reference tables, the hero, sections and footer share one 1180 px grid, and focus rings, mobile menu and touch targets were reworked.
+
+**Who:** Team Guillemots, with AI assistance.
+
+**Reason:** Sections used four background colours and up to four different left edges, cards repeated full-width dark buttons, body text used a thin 300 weight, and the footer did not line up with the page.
+
+**Outcome:** Checked before publishing on a local preview of the live pages: all 82 published pages show the same visible words in the same order as before; no horizontal scrolling at 320, 390, 768, 1024 or 1440 px; text contrast meets WCAG AA; quiz, menus and keyboard focus work. PHP syntax check and `scripts/check_pages.py` pass. Live check after publishing.
